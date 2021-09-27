@@ -19,6 +19,7 @@ public class ChromeSettings {
     }
     @After
     public void cleanUp(){
+        if(driver !=null )
         driver.quit();
     }
 

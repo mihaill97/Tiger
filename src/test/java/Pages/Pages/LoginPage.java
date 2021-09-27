@@ -11,8 +11,8 @@ public class LoginPage {
     }
     By emailField = By.xpath("//*[@id=\"email\"]");
     By passField = By.xpath("//*[@id=\"password\"]");
-    By enterButton = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/form/button");
-    By imNotRegiser = By.xpath("/html/body/div[1]/div[2]/div/div/div/div/form/div[3]/a[2]");
+    By enterButton = By.xpath("//button[@type = 'submit']");
+    By imNotRegiser = By.xpath("//a[@href = '/podbor-kredita']");
 
     public void typeEmail (String email){
         WebElement login = driver.findElement(emailField);

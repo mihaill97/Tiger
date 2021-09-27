@@ -16,7 +16,7 @@ public class FirstStepPage {
     By phoneNumb = By.xpath("//*[@id=\"phone\"]");
     By emailField = By.xpath("//*[@id=\"email\"]");
     By agreeWithterms = By.xpath("//*[@id=\"agree_with_terms\"]");
-    By buttonContinue = By.xpath("//*[@id=\"first-step\"]/div[3]/button");
+    By buttonContinue = By.xpath("//button[@type = 'submit']");
 
     public void typeData(){
         driver.findElement(salaryField).sendKeys("50000");

@@ -9,9 +9,9 @@ public class MainPage {
     public MainPage(WebDriver driver) {
         this.driver = driver;
     }
-    By buttonEnter = By.xpath("/html/body/div[1]/header/div[2]/ul/li[4]/a");
-    By dropMenu = By.xpath("/html/body/div[1]/header/div[3]");
-    By exitButton = By.xpath("//*[@id=\"right-user-menu\"]/div/ul/li[6]/a");
+    By buttonEnter = By.xpath("//a[@class = 'navigation-menu__link text-decoration' and contains (text(),'Вход')]");
+    By dropMenu = By.xpath("//div[@class = 'header__user-panel user-panel']");
+    By exitButton = By.xpath("//a[@href = '/logout'and contains (@class ,'user-menu__block-link clickable__button')]");
 
     public void clickButtonEnter (){
         driver.findElement(buttonEnter).click();
