@@ -19,6 +19,7 @@ public class SecondStepPage {
     By streetField = By.xpath("//*[@id=\"registration_street\"]");
     By numberHouse = By.xpath("//*[@id=\"registration_housenum\"]");
     By buttonContin = By.xpath("//*[@id=\"second-step-submit\"]");
+    By buttondContin = By.xpath("//*[@id=\"second-step-submit\"]");
 
     public void typeData (){
         driver.findElement(userPassport).sendKeys("1123-232132");
